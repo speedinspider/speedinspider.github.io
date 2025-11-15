@@ -1,1 +1,61 @@
-<h1> hi</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpeedinSpider DonutSMP Cash</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(180deg, #000000, #0a0a0a, #111);
+      font-family: monospace;
+      color: #00ff88;
+      font-size: 2rem;
+    }
+    #money {
+      padding: 20px;
+      border: 1px solid #00ff88;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 15px #00ff8866;
+    }
+  </style>
+</head>
+<body>
+  <div id="money">Loading...</div>
+
+  <script>
+    const apiKey = "e44d9c9bbe4c4ba9b19d0b83527bc8e0";
+    const username = "speedinspider";
+
+    function formatMoney(num) {
+      if (num >= 1_000_000_000) return `$${(num / 1_000_000_000).toFixed(1)}b`;
+      if (num >= 1_000_000) return `$${(num / 1_000_000).toFixed(1)}m`;
+      if (num >= 1_000) return `$${(num / 1_000).toFixed(1)}k`;
+      return `$${num}`;
+    }
+
+    async function fetchMoney() {
+      try {
+        const res = await fetch(`https://api.donutsmp.net/v1/stats/${username}`, {
+          headers: { "X-Api-Key": apiKey }
+        });
+
+        if (!res.ok) throw new Error("api fail");
+        const data = await res.json();
+
+        const money = data?.data?.money ?? 0;
+        document.getElementById("money").textContent = `${formatMoney(money)}`;
+      } catch (err) {
+        document.getElementById("money").textContent = "error";
+      }
+    }
+
+    fetchMoney();
+  </script>
+</body>
+</html>
