@@ -42,7 +42,7 @@
     async function fetchMoney() {
       try {
         const res = await fetch(`https://api.donutsmp.net/v1/stats/${username}`, {
-          headers: { "X-Api-Key": apiKey }
+          headers: {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
         });
 
         if (!res.ok) throw new Error("api fail");
