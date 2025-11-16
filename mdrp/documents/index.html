@@ -3,48 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <title>MDRP Remastered - Document Archives</title>
-    <meta property="og:title" content="MDRP Remastered Document Acrhives">
-    <meta property="og:description" content="speedinspider's mdrp archive docs">
+    <meta property="og:title" content="MDRP Remastered Document Archives">
+    <meta property="og:description" content="speedinspider's MDRP archive docs">
     <meta property="og:image" content="https://tr.rbxcdn.com/180DAY-7ff86c385d3b7a8f38124ed38cfa3268/768/432/Image/Webp/noFilter">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://speedinspider.github.io/mdrp/documents">
     <link rel="icon" href="https://tr.rbxcdn.com/180DAY-b5eccbaf4bb593f0d52ec1246534c989/64/64/Image/Webp/noFilter" type="image/png">
     <style>
-   
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
+      body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: none; 
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://tr.rbxcdn.com/180DAY-7ff86c385d3b7a8f38124ed38cfa3268/768/432/Image/Webp/noFilter");
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+    z-index: 0;
+}
+
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            max-height: 80%;
+            overflow-y: auto;
+            background: #0d1117;
         }
 
-        .bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("https://tr.rbxcdn.com/180DAY-7ff86c385d3b7a8f38124ed38cfa3268/768/432/Image/Webp/noFilter");
-            background-size: cover;
-            background-position: center;
-            filter: blur(15px); 
-            z-index: -1;    
+        .frame {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid #21262d; 
+            color: #c9d1d9;
+            text-decoration: none;
+            transition: background 0.2s;
         }
 
-        .content {
-            position: relative;
-            z-index: 1;
-            color: white;
-            text-align: center;
-            font-size: 2rem;
-            padding-top: 50px;
+        .frame:hover {
+            background: #161b22;
+        }
+
+        .clipboard-icon {
+            color: #8b949e;
+            font-size: 16px;
+        }
+        .container::-webkit-scrollbar {
+            width: 8px;
+        }
+        .container::-webkit-scrollbar-thumb {
+            background: #30363d;
+        }
+        .container::-webkit-scrollbar-track {
+            background: #0d1117;
         }
     </style>
 </head>
 <body>
     <div class="bg"></div>
 
-    <div class="content">
-     
-    </div>
+    <div class="container">
+        <a class="frame" href="https://docs.google.com/document/d/1oXekQT9HHzVVbqUaaiUnyPSltId3xPXQEhfsLHNba-k/edit">
+            Declaration of Destroying Tyranny
+            <span class="clipboard-icon">📋</span>
+        </a>
+        <a class="frame" href="https://docs.google.com/document/d/1GklJfcUVxzqtem7BcEUnGWY9Ojj29Kq-ps0wbvrdQiE/edit">
+            The Conspiracy of Murder Drones: RP [v2]
+            <span class="clipboard-icon">📋</span>
+        </a>
+        <a class="frame" href="https://docs.google.com/document/d/13Xll2LjX1TgAO2WmaH1IeWhLCvnGtAMnzJ_S7m1-aE4/edit">
+            The Conspiracy of Murder Drones: RP
+            <span class="clipboard-icon">📋</span>
+          </div>
 </body>
 </html>
