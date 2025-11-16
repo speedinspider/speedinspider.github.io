@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MDRP Remastered</title>
+    <meta property="og:title" content="MDRP Remastered - Badges">
+    <meta property="og:description" content="how-to on badges for mdrp remastered! site made by wellcheese">
+    <meta property="og:image" content="https://tr.rbxcdn.com/180DAY-7ff86c385d3b7a8f38124ed38cfa3268/768/432/Image/Webp/noFilter">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://speedinspider.github.io/mdrp">
+    <link rel="icon" href="https://tr.rbxcdn.com/180DAY-b5eccbaf4bb593f0d52ec1246534c989/64/64/Image/Webp/noFilter" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #111;
+            overflow: hidden;
+            }
+
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://tr.rbxcdn.com/180DAY-7ff86c385d3b7a8f38124ed38cfa3268/768/432/Image/Webp/noFilter");
+            background-size: cover;
+            background-position: center;
+            filter: blur(15px) brightness(0.6);
+            z-index: -0;
+        }
+
+.signature {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 0.9rem;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+       pointer-events: auto; 
+    z-index: 999;
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+   transition: all 0.3s ease;
+}
+
+.signature:hover {
+    text-shadow:
+        0 0 5px white,
+        0 0 10px white,
+        0 0 15px white,
+        0 0 20px rgba(255,255,255,0.6);
+}
+        .panel {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(145deg, rgba(0,0,0,0.95), rgba(20,20,20,0.95));
+            padding: 30px 25px;
+            border-radius: 18px;
+            width: 380px;
+            max-height: 85%;
+            color: white;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+            text-align: center;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #555 transparent;
+            z-index: 1;
+        }
+
+        .panel::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .panel::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.2);
+            border-radius: 3px;
+        }
+
+        .panel h1 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .badge {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.05);
+            margin-bottom: 12px;
+            padding: 8px 12px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .badge:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-2px);
+        }
+
+        .badge-name {
+            font-size: 1rem;
+            flex: 1;
+            text-align: left;
+        }
+
+        .view-button {
+            background: #ff6b6b;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .view-button:hover {
+            background: #ff4b4b;
+        }
+
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            transform: scale(0);
+            opacity: 0.6;
+            pointer-events: none;
+            animation: rippleAnim 0.6s ease-out forwards;
+            z-index: 999;
+        }
+
+        @keyframes rippleAnim {
+            to {
+                transform: scale(0.04);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+<div class="signature">made by wellcheese</div>
+
+    <div class="panel">
+        <h1>Badges</h1>
+        <div class="badge">
+            <span class="badge-name">Meet The Owner</span>
+            <a class="view-button" href="/mdrp/badges/meet-the-owner" target="_blank">View</a>
+        </div>
+        <div class="badge">
+            <span class="badge-name">You Found DigitizedPixels</span>
+            <a class="view-button" href="/mdrp/badges/digitized-pixels" target="_blank">View</a>
+        </div>
+        <div class="badge">
+            <span class="badge-name">April Fools Eldritch J</span>
+            <a class="view-button" href="/mdrp/badges/eldritch-j" target="_blank">View</a>
+        </div>
+        <div class="badge">
+            <span class="badge-name">Skulls n' Bones Badge</span>
+            <a class="view-button" href="/mdrp/badges/skulls-n-bones" target="_blank">View</a>
+        </div>
+        <div class="badge">
+            <span class="badge-name">Zombie Drones</span>
+            <a class="view-button" href="/mdrp/badges/zombie-drones" target="_blank">View</a>
+        </div>
+        <div class="badge">
+            <span class="badge-name">Fleshy Disguise</span>
+            <a class="view-button" href="/mdrp/badges/fleshy-disguise" target="_blank">View</a>
+        </div>
+        <div class="badge">
+            <span class="badge-name">Dapper & Dandy</span>
+            <a class="view-button" href="/mdrp/badges/dapper-dandy" target="_blank">View</a>
+        </div>
+        <div class="badge">
+            <span class="badge-name">Chaperoned</span>
+            <a class="view-button" href="/mdrp/badges/chaperoned" target="_blank">View</a>
+        </div>
+        <div class="badge">
+            <span class="badge-name">Prom Queen</span>
+            <a class="view-button" href="/mdrp/badges/prom-queen" target="_blank">View</a>
+        </div>
+        <div class="badge">
+            <span class="badge-name">Defective Drone</span>
+            <a class="view-button" href="/mdrp/badges/defective-drone" target="_blank">View</a>
+        </div>
+        <div class="badge">
+            <span class="badge-name">Distraction for Uzi</span>
+            <a class="view-button" href="/mdrp/badges/distraction-for-uzi" target="_blank">View</a>
+        </div>
+    </div>
+
+<script>
+
+document.addEventListener('click', function(e){
+    const ripple = document.createElement('span');
+    ripple.classList.add('ripple');
+
+
+    const maxDim = Math.max(window.innerWidth, window.innerHeight);
+    ripple.style.width = ripple.style.height = maxDim + 'px';
+    ripple.style.left = e.clientX - maxDim/2 + 'px';
+    ripple.style.top = e.clientY - maxDim/2 + 'px';
+
+       const colors = ['#ff4b4b','#4b9bff','#4bff88','#ffeb4b','#ff4be1'];
+    ripple.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+
+    document.body.appendChild(ripple);
+
+    ripple.addEventListener('animationend', () => ripple.remove());
+});
+
+
+document.querySelectorAll('.view-button').forEach(button => {
+    button.addEventListener('click', function(e){
+        e.preventDefault();
+        const url = this.href;
+
+  
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        const maxDim = Math.max(window.innerWidth, window.innerHeight);
+        ripple.style.width = ripple.style.height = maxDim + 'px';
+        ripple.style.left = e.clientX - maxDim/2 + 'px';
+        ripple.style.top = e.clientY - maxDim/2 + 'px';
+        const colors = ['#ff4b4b','#4b9bff','#4bff88','#ffeb4b','#ff4be1'];
+        ripple.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+        document.body.appendChild(ripple);
+        ripple.addEventListener('animationend', () => ripple.remove());
+
+
+        setTimeout(() => {
+            window.open(url, '_blank');
+        }, 170);
+    });
+});
+</script>
+
+
+
+</body>
+</html>
